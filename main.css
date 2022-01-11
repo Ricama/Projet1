@@ -1,0 +1,208 @@
+/* Police */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./font/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('./font/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montr';
+    src: url('./font/Montserrat-Regular.ttf');
+}
+
+/* Fin Police */
+/* Général page */
+body {
+    color: white;
+    margin: 0;
+    /* couleur texte et suppresion du rebord de la page */
+}
+
+p,
+ul {
+    font-family: 'Montr';
+    font-size: 18px;
+    /* taille et police d'écriture pour les balises p et ul*/
+}
+
+mark {
+    background-color: #84eca3;
+    padding: 2px;
+    /* surligner une partie d'un texte */
+}
+
+/* Fin Génréral page */
+/* Header */
+header {
+    background-color: #6a52e6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    /* Placement du contenu du header grace à flex-box et quelques padding */
+
+}
+
+header>section>h2 {
+
+    color: #213967;
+    margin-top: 0px;
+    font-size: 30px;
+    font-family: 'Mont';
+    /* petit placement (margin top) Couleur du texte taille et police d'écriture  */
+
+}
+
+.flex {
+    padding-left: 15%;
+    width: 30%;
+    text-align: left;
+    /* Flex est la partie gauche du header (tous les différents morceaux de textes) placement et taille  */
+}
+
+header>section>h1 {
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    /* petit placement (margin bot) taille et police du h1 */
+}
+
+header>section>p {
+    width: 80%;
+    font-family: 'Montr';
+    /* taille texte et police */
+}
+
+header>img {
+    padding-right: 15%;
+    width: 30%;
+    /*placement et taille de l'image  */
+}
+
+/* Fin Header */
+/* Main */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    color: #213967;
+    width: 100%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    /*Placement/taille du contenu, couleur du fond  */
+}
+
+main>img {
+    padding-right: 5%;
+    width: 20%;
+    /* taille et placement de l'image */
+}
+
+main>section {
+    width: 40%;
+    padding-left: 5%;
+    /* taille et placement du texte*/
+}
+
+main>section>h2 {
+    color: #213967;
+    font-size: 30px;
+    font-family: 'Mont';
+    /* couleur taille et police pour le texte */
+}
+
+/* Fin Main */
+/* footer */
+footer {
+    background-color: #213967;
+    padding-left: 15%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    /* couleur du fond et placement */
+}
+
+footer>section>h1 {
+    font-size: 40px;
+    font-family: 'Montserrat';
+    margin-bottom: 0px;
+    /* taille police et placement pour le titre */
+}
+
+footer>section>h2 {
+    font-size: 20px;
+    font-family: 'Montr';
+    margin-top: 0px;
+    /* taille police et placement pour le h2 */
+}
+
+footer>section>a>img {
+    width: 100px;
+    margin-left: 10px;
+    /* taille et placement pour les logos */
+}
+
+/* Fin footer */
+/* Responsive téléphone */
+@media screen and (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+        /* flex box pour le header inversion d'ordre entre l'image et le texte*/
+    }
+
+    header>img {
+        padding-right: 0%;
+        width: 80%;
+        /*placement et taille image du header */
+    }
+
+    .flex {
+        padding-left: 0%;
+        width: 80%;
+        /* placement et taille du contenu du header */
+    }
+
+    main>img {
+        display: none;
+        /* suppression image du main */
+    }
+
+    main>section {
+        width: 80%;
+        /*taille du contenu du main  */
+    }
+
+    footer>section {
+        padding-right: 10%;
+        padding-left: 10%;
+        /* placement du contenu du footer*/
+    }
+
+    footer {
+        padding-left: 0%;
+        /* placement du footer */
+    }
+
+    footer>section>a>img {
+        width: 26.66%;
+        /* taille des logos  */
+    }
+
+    /* Fin Responsive téléphone */
+}
